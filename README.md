@@ -33,7 +33,7 @@ nav{
 
 <!--a href="http://www.pablogarciafernandez.com/lab/side-navigation-menu.html" target="_blank">Code original</a-->
 
-<a href="http://codepen.io/PableraShow/pen/qdIsm" target="_blank">Code on CodePen</a>
+<a href="http://codepen.io/PableraShow/pen/qdIsm" target="_blank">Demo on CodePen</a>
 
 ===================
 
