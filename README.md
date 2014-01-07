@@ -1,4 +1,4 @@
-<h1>Table Responsive</h1>
+<h1>&lt;Table&gt; Responsive</h1>
 
 <p>CSS3 technology & without JS.</p>
 
