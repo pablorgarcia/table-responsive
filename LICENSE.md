@@ -1,5 +1,5 @@
 <h1>License</h1>
-<h2><Table> Responsive</h2>
+<h2>&lt;Table&gt; Responsive</h2>
 
 <p>This is a human-readable summary of the <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode" target="_blank">Legal Code (the full license).</p>
 
