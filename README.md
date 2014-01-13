@@ -1,6 +1,6 @@
 <h1>&lt;Table&gt; Responsive</h1>
 
-<p>CSS3 technology & without JS.</p>
+<p>CSS3 transition, box-shadow, transform properties. Responsive Web Desing & without JS.</p>
 
 <!--
 
