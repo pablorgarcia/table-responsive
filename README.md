@@ -31,7 +31,7 @@ nav{
 
 <p>If you think you can make this better, please Download, Fork, & Commit. I'd love to see your ideas.</p>
 
-<!--a href="http://www.pablogarciafernandez.com/lab/side-navigation-menu.html" target="_blank">Code original</a-->
+<a href="http://www.pablogarciafernandez.com/lab/table-responsive.html" target="_blank">Code original</a>
 
 <a href="http://codepen.io/PableraShow/pen/qdIsm" target="_blank">Demo on CodePen</a>
 
