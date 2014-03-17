@@ -21,7 +21,7 @@ You should add this comment to the beginning of the CSS code of this plugin:
 	&lt;Table&gt; Responsive
 	===================
 	License:
-	http://goo.gl/H8ytpz
+	http://goo.gl/EaUPrt
 	===================
 	Author: @PableraShow
 
