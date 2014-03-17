@@ -2,11 +2,7 @@
 
 <p>CSS3 transition, box-shadow, transform properties. Responsive Web Desing & without JS.</p>
 
-<!--
-
-<a href="http://www.pablogarciafernandez.com/lab/demo/side-navigation-menu.html" target="_blank">Check out the demo page</a>.
-
--->
+<a href="http://codepen.io/PableraShow/pen/qdIsm" target="_blank">Check out the demo page</a>.
 
 <h2>How it works</h2>
 <p>Coming soon...</p>
@@ -31,9 +27,29 @@ nav{
 
 <p>If you think you can make this better, please Download, Fork, & Commit. I'd love to see your ideas.</p>
 
-<a href="http://www.pablogarciafernandez.com/lab/table-responsive.html" target="_blank">Code original</a>
+<h2>License</h2>
 
-<a href="http://codepen.io/PableraShow/pen/qdIsm" target="_blank">Demo on CodePen</a>
+<p>You should add this comment to the beginning of the CSS code of this plugin:
+<pre>
+/*	
+	&lt;Table&gt; Responsive
+	===================
+	License:
+	http://goo.gl/EaUPrt
+	===================
+	Author: @PableraShow
+
+*/
+</pre>
+And add another comment when finish the CSS code plugin:
+<pre>
+/*	
+	End of the &lt;Table&gt; Responsive
+	===================
+	Author: @PableraShow
+
+*/
+</pre></p>
 
 ===================
 
