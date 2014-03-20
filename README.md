@@ -4,8 +4,8 @@
 
 <a href="http://codepen.io/PableraShow/pen/qdIsm" target="_blank">Check out the demo page</a>.
 
-<h2>How it works</h2>
-<p>Coming soon...</p>
+<!--h2>How it works</h2>
+<p>Coming soon...</p-->
 
 <!--
 <p>We have a &lt;nav&gt; tag on the left of the screen with <code>position: fixed;</code>, a width and a fixed height.</p>
