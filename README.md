@@ -26,31 +26,3 @@ nav{
 <h2>Download, Fork, Commit.</h2>
 
 <p>If you think you can make this better, please Download, Fork, & Commit. I'd love to see your ideas.</p>
-
-<h2>License</h2>
-
-<p>You should add this comment to the beginning of the CSS code of this plugin:
-<pre>
-/*	
-	&lt;Table&gt; Responsive
-	===================
-	License:
-	http://goo.gl/EaUPrt
-	===================
-	Author: @PableraShow
-
-*/
-</pre>
-And add another comment when finish the CSS code plugin:
-<pre>
-/*	
-	End of the &lt;Table&gt; Responsive
-	===================
-	Author: @PableraShow
-
-*/
-</pre></p>
-
-===================
-
-<p>Pablo García Fernández</p>
