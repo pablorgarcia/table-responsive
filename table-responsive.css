@@ -62,9 +62,10 @@ h2 a {
 	  text-align: left;
 	  overflow: hidden;
 	  width: 80%;
+    table-layout: fixed;
 	  margin: 0 auto;
-  display: table;
-  padding: 0 0 8em 0;
+    display: table;
+    padding: 0 0 8em 0;
 }
 
 .container td, .container th {
