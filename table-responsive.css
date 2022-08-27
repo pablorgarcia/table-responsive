@@ -44,8 +44,8 @@ h2 a {
 .yellow { color: #FFF842; }
 
 .container th h1 {
-	  font-weight: bold;
-	  font-size: 1em;
+  font-weight: bold;
+	font-size: 1em;
   text-align: left;
   color: #185875;
 }
@@ -62,7 +62,6 @@ h2 a {
 	  text-align: left;
 	  overflow: hidden;
 	  width: 80%;
-    table-layout: fixed;
 	  margin: 0 auto;
     display: table;
     padding: 0 0 8em 0;
@@ -92,6 +91,7 @@ h2 a {
 .container td:first-child {
 	  color: #FB667A;
 }
+
 
 .container tr:hover {
    background-color: #464A52;
