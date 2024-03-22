@@ -1,67 +1,504 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Side Navigation Menu</title>
-    <meta charset="utf-8">
-    <meta name="Author" content="https://github.com/pablorgarcia" />
-    <meta name="description" content="Table Responsive" />
-    <meta name="keywords" content="table, responsive" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <link href="table-responsive.css" media="screen" type="text/css" rel="stylesheet" />
+  <meta charset="utf-8">
+  <title>JavaScript Array Methods</title>
+  <link rel="stylesheet" href="styles.css">
+  
 </head>
+  <style>
+    td:nth-child(3) {
+  margin-right: 20px;
+}
+    tbody tr:hover td {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.075);
+}
+
+/* increase table width */
+.container {
+  width: 95%;
+}
+
+/* set width of the fourth column to 30% */
+th:nth-child(4),
+td:nth-child(4) {
+  width: 20%;
+}
+
+/* allow text in the fourth column to wrap to the next line */
+td:nth-child(4) {
+  white-space: pre-wrap;
+}
+  </style>
 <body>
-
-<h1><span class="blue">&lt;</span>Table<span class="blue">&gt;</span> <span class="yellow">Responsive</pan></h1>
-<h2>Created with love by <a href="http://pablogarcia.dev" target="_blank">Pablo García</a></h2>
-
-<table class="container">
-	<thead>
-		<tr>
-			<th><h1>Sites</h1></th>
-			<th><h1>Views</h1></th>
-			<th><h1>Clicks</h1></th>
-			<th><h1>Average</h1></th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Google</td>
-			<td>9518</td>
-			<td>6369</td>
-			<td>01:32:50</td>
-		</tr>
-		<tr>
-			<td>Twitter</td>
-			<td>7326</td>
-			<td>10437</td>
-			<td>00:51:22</td>
-		</tr>
-		<tr>
-			<td>Amazon</td>
-			<td>4162</td>
-			<td>5327</td>
-			<td>00:24:34</td>
-		</tr>
-    <tr>
-			<td>LinkedIn</td>
-			<td>3654</td>
-			<td>2961</td>
-			<td>00:12:10</td>
-		</tr>
-    <tr>
-			<td>CodePen</td>
-			<td>2002</td>
-			<td>4135</td>
-			<td>00:46:19</td>
-		</tr>
-    <tr>
-			<td>GitHub</td>
-			<td>4623</td>
-			<td>3486</td>
-			<td>00:31:52</td>
-		</tr>
-	</tbody>
-</table>
-
-</body>
-</html>
+  <h1>JavaScript Array Methods</h1>
+    <table class="container">
+    <thead>
+      <tr>
+        <th><h1>Method</h1></th>
+        <th><h1>Description</h1></th>
+        <th><h1>Example Code</h1></th>
+        <th><h1>Result</h1></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>.push()</td>
+        <td>Adds one or more elements to the end of an array and returns the new length of the array.</td>
+        <td>
+          <pre>
+let arr = [1, 2, 3];
+arr.push(4);
+          </pre>
+        </td>
+        <td>[1, 2, 3, 4]</td>
+      </tr>
+      <tr>
+        <td>.pop()</td>
+        <td>Removes the last element from an array and returns that element.</td>
+        <td>
+          <pre>
+let arr = [1, 2, 3];
+let lastItem = arr.pop();
+          </pre>
+        </td>
+        <td>
+          3<br>
+          [1, 2]
+        </td>
+      </tr>
+      <tr>
+        <td>.shift()</td>
+        <td>Removes the first element from an array and returns that element.</td>
+        <td>
+          <pre>
+let arr = [1, 2, 3];
+let firstItem = arr.shift();
+          </pre>
+        </td>
+        <td>
+          1<br>
+          [2, 3]
+        </td>
+      </tr>
+      <tr>
+        <td>.unshift()</td>
+        <td>Adds one or more elements to the beginning of an array and returns the new length of the array.</td>
+        <td>
+          <pre>
+let arr = [1, 2, 3];
+arr.unshift(0);
+          </pre>
+        </td>
+        <td>[0, 1, 2, 3]</td>
+      </tr>
+      <tr>
+        <td>.splice()</td>
+        <td>Changes the content of an array by removing, replacing, or adding elements and returns an array containing the removed elements, if any.</td>
+        <td>
+          <pre>
+let arr = [1, 2, 3];
+let removedItems = arr.splice(1, 1);
+          </pre>
+        </td>
+        <td>
+          2<br>
+          [1, 3]
+        </td>
+      </tr>
+      <tr>
+        <td>.slice()</td>
+        <td>Returns a shallow copy of a portion of an array into a new array object.</td>
+        <td>
+          <pre>
+let arr = [1, 2, 3];
+let newArr = arr.slice(1, 2);
+          </pre>
+        </td>
+        <td>[2]</td>
+      </tr>
+      <tr>
+        <td>.indexOf()</td>
+        <td>Returns the first index at which a given element can be found in the array, or -1 if it is not present.</td>
+        <td>
+          <pre>
+let arr = [1, 2, 3];
+let index = arr.indexOf(2);
+          </pre>
+        </td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>.lastIndexOf()</td>
+        <td>Returns the last index at which a given element can be found in the array, or -1 if it is not present.</td>
+        <td>
+          <pre>
+let arr = [1, 2, 3, 2];
+let index = arr.lastIndexOf(2);
+          </pre>
+        </td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>.includes()</td>
+        <td>Determines whether an array includes a certain element, returning true or false as appropriate.</td>
+        <td>
+          <pre>
+let arr = [1, 2, 3];
+let result = arr.includes(2);
+          </pre>
+        </td>
+        <td>true</td>
+      </tr>
+      <tr>
+        <td>.forEach()</td>
+        <td>Executes a provided function once for each array element.</td>
+        <td>
+          <pre>
+let arr = [1, 2, 3];
+arr.forEach(function(item) {
+  console.log(item);
+});
+          </pre>
+        </td>
+        <td>
+          1<br>
+          2<br>
+          3
+        </td>
+      </tr>
+      <tr>
+        <td>.map()</td>
+        <td>Creates a new array with the results of calling a provided function on every element in the calling array.</td>
+        <td>
+          <pre>
+let arr = [1, 2, 3];
+let newArr = arr.map(function(item) {
+  return item * 2;
+});
+          </pre>
+        </td>
+        <td>[2, 4, 6]</td>
+      </tr>
+      <tr>
+        <td>.filter()</td>
+        <td>Creates a new array with all elements that pass the test implemented by the provided function.</td>
+        <td>
+          <pre>
+let arr = [1, 2, 3];
+let newArr = arr.filter(function(item) {
+  return item > 1;
+});
+          </pre>
+        </td>
+        <td>[2, 3]</td>
+      </tr>
+      <tr>
+        <td>.reduce()</td>
+        <td>Executes a reducer function (that you provide) on each element of the array, resulting in a single output value.</td>
+        <td>
+          <pre>
+let arr = [1, 2, 3];
+let sum = arr.reduce(function(acc, item) {
+  return acc + item;
+}, 0);
+          </pre>
+        </td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>.find()</td>
+        <td>Returns the value of the first element in the array that satisfies the provided testing function.</td>
+        <td>
+          <pre>
+let arr = [1, 2, 3];
+let found = arr.find(function(item) {
+  return item > 1;
+});
+          </pre>
+        </td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>.findIndex()</td>
+        <td>Returns the index of the first element in the array that satisfies the provided testing function.</td>
+        <td>
+          <pre>
+let arr = [1, 2, 3];
+let index = arr.findIndex(function(item) {
+  return item > 1;
+});
+          </pre>
+        </td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>.every()</td>
+        <td>Tests whether all elements in the array pass the test implemented by the provided function.</td>
+        <td>
+          <pre>
+let arr = [1, 2, 3];
+let result = arr.every(function(item) {
+  return item > 0;
+});
+          </pre>
+        </td>
+        <td>true</td>
+      </tr>
+      <tr>
+        <td>.some()</td>
+        <td>Tests whether at least one element in the array passes the test implemented by the provided function.</td>
+        <td>
+          <pre>
+let arr = [1, 2, 3];
+let result = arr.some(function(item) {
+  return item > 2;
+});
+          </pre>
+        </td>
+        <td>true</td>
+      </tr>
+      <tr>
+        <td>.sort()</td>
+        <td>Sorts the elements of an array in place and returns the sorted array.</td>
+        <td>
+          <pre>
+let arr = [3, 2, 1];
+arr.sort();
+          </pre>
+        </td>
+        <td>[1, 2, 3]</td>
+      </tr>
+      <tr>
+        <td>.reverse()</td>
+        <td>Reverses the order of the elements in an array in place and returns the reversed array.</td>
+        <td>
+          <pre>
+let arr = [1, 2, 3];
+arr.reverse();
+          </pre>
+        </td>
+        <td>[3, 2, 1]</td>
+      </tr>
+      <tr>
+        <td>.concat()</td>
+        <td>Returns a new array that is the result of concatenating two or more arrays.</td>
+        <td>
+          <pre>
+let arr1 = [1, 2];
+let arr2 = [3, 4];
+let newArr = arr1.concat(arr2);
+          </pre>
+        </td>
+        <td>[1, 2, 3, 4]</td>
+      </tr>
+      <tr>
+        <td>.join()</td>
+        <td>Joins all elements of an array into a string, separated by the specified separator.</td>
+        <td>
+          <pre>
+let arr = [1, 2, 3];
+let str = arr.join('-');
+          </pre>
+        </td>
+        <td>"1-2-3"</td>
+      </tr>
+      <tr>
+        <td>.toString()</td>
+        <td>Converts an array to a string and returns the resulting string.</td>
+        <td>
+          <pre>
+let arr = [1, 2, 3];
+let str = arr.toString();
+          </pre>
+        </td>
+        <td>"1,2,3"</td>
+      </tr>
+      <tr>
+        <td>.slice() with negative index</td>
+        <td>Returns a shallow copy of a portion of an array into a new array object, with negative index counting from the end of the array.</td>
+        <td>
+          <pre>
+let arr = [1, 2, 3];
+let newArr = arr.slice(-2);
+          </pre>
+        </td>
+        <td>[2, 3]</td>
+      </tr>
+      <tr>
+        <td>.splice() with negative index</td>
+        <td>Changes the content of an array by removing, replacing, or adding elements, with negative index counting from the end of the array.</td>
+        <td>
+          <pre>
+let arr = [1, 2, 3];
+let removedItems = arr.splice(-2, 1);
+          </pre>
+        </td>
+        <td>
+          2<br>
+          [1, 3]
+        </td>
+      </tr>
+      <tr>
+        <td>.fill()</td>
+        <td>Fills all the elements of an array from a start index to an end index with a static value.</td>
+        <td>
+          <pre>
+let arr = [1, 2, 3];
+arr.fill(0);
+          </pre>
+        </td>
+        <td>[0, 0, 0]</td>
+      </tr>
+      <tr>
+        <td>.copyWithin()</td>
+        <td>Copies a sequence of array elements within the array.</td>
+        <td>
+          <pre>
+let arr = [1, 2, 3, 4, 5];
+arr.copyWithin(0, 3);
+          </pre>
+        </td>
+        <td>[4, 5, 3, 4, 5]</td>
+      </tr>
+      <tr>
+        <td>.entries()</td>
+        <td>Returns an iterator object that contains the key/value pairs for each index in the array.</td>
+        <td>
+          <pre>
+let arr = [1, 2, 3];
+let iterator = arr.entries();
+let first = iterator.next().value;
+let second = iterator.next().value;
+          </pre>
+        </td>
+        <td>
+          first: [0, 1]<br>
+          second: [1, 2]
+        </td>
+      </tr>
+      <tr>
+        <td>.keys()</td>
+        <td>Returns an iterator object that contains the keys for each index in the array.</td>
+        <td>
+          <pre>
+let arr = [1, 2, 3];
+let iterator = arr.keys();
+let first = iterator.next().value;
+let second = iterator.next().value;
+          </pre>
+        </td>
+        <td>
+          first: 0<br>
+          second: 1
+        </td>
+      </tr>
+      <tr>
+        <td>.values()</td>
+        <td>Returns an iterator object that contains the values for each index in the array.</td>
+        <td>
+          <pre>
+let arr = [1, 2, 3];
+let iterator = arr.values();
+let first = iterator.next().value;
+let second = iterator.next().value;
+          </pre>
+        </td>
+        <td>
+          first: 1<br>
+          second: 2
+        </td>
+      </tr>
+      <tr>
+        <td>.findIndex() with arrow function</td>
+        <td>Returns the index of the first element in the array that satisfies the provided testing function, using arrow function syntax.</td>
+        <td>
+          <pre>
+let arr = [1, 2, 3];
+let index = arr.findIndex(item => item > 1);
+          </pre>
+        </td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>.find() with arrow function</td>
+        <td>Returns the value of the first element in the array that satisfies the provided testing function, using arrow function syntax.</td>
+        <td>
+          <pre>
+let arr = [1, 2, 3];
+let found = arr.find(item => item > 1);
+          </pre>
+        </td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>.some() with arrow function</td>
+        <td>Tests whether at least one element in the array passes the test implemented by the provided function, using arrow function syntax.</td>
+        <td>
+          <pre>
+let arr = [1, 2, 3];
+let result = arr.some(item => item > 2);
+          </pre>
+        </td>
+        <td>true</td>
+      </tr>
+      <tr>
+        <td>.every() with arrow function</td>
+        <td>Tests whether all elements in the array pass the test implemented by the provided function, using arrow function syntax.</td>
+        <td>
+          <pre>
+let arr = [1, 2, 3];
+let result = arr.every(item => item > 0);
+          </pre>
+        </td>
+        <td>true</td>
+      </tr>
+      <tr>
+        <td>.filter() with arrow function</td>
+        <td>Creates a new array with all elements that pass the test implemented by the provided function, using arrow function syntax.</td>
+        <td>
+          <pre>
+let arr = [1, 2, 3];
+let newArr = arr.filter(item => item > 1);
+          </pre>
+        </td>
+        <td>[2, 3]</td>
+      </tr>
+      <tr>
+        <td>.map() with arrow function</td>
+        <td>Creates a new array with the results of calling a provided function on every element in the calling array, using arrow function syntax.</td>
+        <td>
+          <pre>
+let arr = [1, 2, 3];
+let newArr = arr.map(item => item * 2);
+          </pre>
+        </td>
+        <td>[2, 4, 6]</td>
+      </tr>
+      <tr>
+        <td>.reduce() with arrow function</td>
+        <td>Executes a reducer function (that you provide) on each element of the array, resulting in a single output value, using arrow function syntax.</td>
+        <td>
+          <pre>
+let arr = [1, 2, 3];
+let sum = arr.reduce((acc, item) => acc + item);
+          </pre>
+        </td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>.sort() with compare function</td>
+        <td>Sorts the elements of an array in place and returns the sorted array, using a compare function.</td>
+        <td>
+          <pre>
+let arr = [3, 2, 1];
+arr.sort(function(a, b) {
+  return a - b;
+});
+          </pre>
+        </td>
+        <td>[1, 2, 3]</td>
+      </tr>
+    </tbody>
+  </table>
